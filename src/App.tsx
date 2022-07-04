@@ -1,7 +1,10 @@
-import React from 'react'
+import React, { useState } from 'react'
+import Login from './pages/login'
 
 function App() {
-  return <div className="App">content goes here</div>
+  const [logged, setLogged] = useState(false)
+
+  return <div className="App">{logged ? <>home</> : <Login />}</div>
 }
 
 export default App
