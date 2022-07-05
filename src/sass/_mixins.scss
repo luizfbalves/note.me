@@ -1,0 +1,20 @@
+@mixin Container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  height: 100vh;
+
+  @media (max-width: 767px) {
+    flex-direction: column;
+    padding: 3rem;
+  } //mobile
+  @media (min-width: 768px) and (max-width: 1023px) {
+    flex-direction: row;
+    padding: 3rem;
+  } //tablets
+  @media (min-width: 1024px) {
+    flex-direction: row;
+    padding: 2rem;
+  } //desktop
+}

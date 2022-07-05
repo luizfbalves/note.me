@@ -1,12 +1,12 @@
 import { Container, Banner, FormLogin } from './styles'
-import { Button, Input, Divider, Form } from 'rsuite'
+import { Button, Input, Divider } from 'rsuite'
 import BannerSVG from '../../assets/images/banner.svg'
 
 export default function Login() {
   return (
     <Container>
       <Banner>
-        <img src={BannerSVG} />
+        <img src={BannerSVG} alt="" />
       </Banner>
       <FormLogin>
         <FormLogin.Group id="title">
